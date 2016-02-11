@@ -1,0 +1,86 @@
+/* Empty. Add your own CSS if you like */
+
+.bar.bar-assertive {
+	background-color: #E51F37;
+}
+
+.item {
+	background-color: #931C2B;
+	border-color: #6D1322;
+}
+
+#mainPost {
+	background-color: #931C2B;
+}
+
+img {
+	/*border: solid 2px #000;*/
+	border-radius: 100px;
+	background-color: #fff;
+	float: left;
+}
+
+h1 {
+	float: left;
+	margin-left: 20px;
+	margin-top: 46px;
+	color: #fff;
+	margin-bottom: 20%;
+	font-size: 20px;
+}
+
+h2 {
+	color: #fff;
+}
+
+.detailHeading {
+	color: #fff;
+	font-size: 18px;
+	text-align: center;
+}
+
+.evo {
+	display: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	clear: both;
+	background-color: #BE1E2D;
+	border-radius: 10px;
+}
+
+.detailsList {
+	color: #fff;
+	margin-left: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.detailsList_right {
+	float: right;
+	color: #fff;
+	margin-right: 20px;
+	padding-top: 5px;
+}
+
+.evolutionName {
+	float: right;
+	color: #fff;
+	margin-right: 20px;
+}
+
+.bar.bar-stable {
+	background-color: #E51F37;
+	text-align: center;
+	border-color: #8E1423;
+}
+
+.home {
+	color: #fff;
+	margin: 0 auto;
+	margin-top: 5px;
+	font-size: 20px;
+}

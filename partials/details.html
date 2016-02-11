@@ -1,0 +1,31 @@
+<ion-header-bar class="bar-assertive">
+	<h1 class="title">Pokedex</h1>
+</ion-header-bar>
+
+<ion-content id="mainPost" class="padding">
+<header>
+	<img data-ng-src="http://pokeapi.co{{image}}">
+	<h1>{{name}}</h1>
+
+</header>
+<ul>
+	<li class="detailsList_right">HP: {{hp}}</li>
+	<li class="detailsList">Attack: {{attack}}</li>
+	<li class="detailsList">Defense: {{defense}}</li>
+	<li class="detailsList">Height: {{height}}</li>
+</ul>
+<h2 id="dynamicHeading" class="detailHeading evo">Evolutions</h2>
+	<ul>
+		<li ng-repeat="evolution in evolutions" class="detailsList">Level: {{evolution.level}}<a ng-repeat="evolution in evolutions" href="#/details/{{$index}}" class="evolutionName">{{evolution.to}}</a></li>
+	</ul>
+<h2 class="detailHeading">Abilites</h2>
+	<ul>
+		<li ng-repeat="ability in abilities" class="detailsList">{{ability.name}}</li>
+	</ul>
+<p data-ng-bind-html="fullPost"></p>
+</ion-content>
+
+<ion-footer-bar class="bar-stable">
+	<a class="home icon-left ion-home" ng-click="goHome()">
+	</a>
+</ion-footer-bar>

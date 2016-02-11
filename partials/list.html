@@ -1,0 +1,23 @@
+<ion-header-bar class="bar-assertive">
+	<h1 class="title">Pokedex</h1>
+</ion-header-bar>
+
+<ion-content>
+	<ion-refresher pulling-text="Pull To Refresh" refreshing-text="loading..." on-refresh="loadPokedex()">
+	</ion-refresher>
+
+
+	<ion-list id="mainList">
+		<ion-item ng-repeat="poke in pokemon | limitTo: 151" class="item">
+		<!-- <img data-ng-src="http://pokeapi.co/media/img/{{poke.national_id}}.png" alt="poke image"> -->
+		<!-- <img data-ng-src="http://pokeapi.co{{images}}"> -->
+		<!-- <h2>{{post.title}}</h2>
+		<p>{{post.excerpt}}</p> -->
+		<!-- <h2 data-ng-bind-html="poke.name"></h2> -->
+		<!-- <p data-ng-bind-html="post.excerpt"></p>
+ -->		<!-- <h3>Author: {{post.author.nice_name}}</h3> -->
+<!--  <p>{{pokemon.national_id}}</p> -->
+		<a href="#/details/{{$index}}"><h2 data-ng-bind-html="poke.name"></h2></a>
+		</ion-item>
+	</ion-list>
+</ion-content>
